@@ -2,20 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-// class Square extends React.Component {
-//
-//   render() {
-//     return (
-//       <button
-//         className="square"
-//         onClick={() => this.props.onClick({value: 'X'})}
-//         >
-//         {this.props.value}
-//       </button>
-//     );
-//   }
-// }
-
 function Square(props){
   return(
     <button className="square" onClick={props.onClick}>
@@ -155,10 +141,11 @@ function calculateWinner(squares) {
   for (let i = 0; i < lines.length; i++) {
     const [a, b, c] = lines[i];
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-      // attempt to highlight
 
-      // -----------
+      // add a class to change color of font to squares a.b and c
+    
       return squares[a];
+
     }
   }
 

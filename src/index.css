@@ -1,6 +1,3 @@
-/* font-family: 'Caveat', cursive;
-font-family: 'Do Hyeon', sans-serif; */
-
 html {
 	font-size: 100%;
 }
@@ -12,210 +9,152 @@ html {
 	box-sizing: border-box;
 }
 
-
 body {
-  /* font: 14px "Century Gothic", Futura, sans-serif; */
-  font-family: 'Do Hyeon', sans-serif;
-
-  letter-spacing: 2px;
-  margin: 80px 50px 50px 50px;
-  /* background-color: hsl(188, 16%, 50%) ; */
-  background-image: url("textured-grey.jpg");
-  display:flex;
-  flex-direction: row;
-  justify-content:space-around;
-}
-/* took out ol from here */
- ul {
-  padding: 0;
-  list-style-type: none;
-  width: 100%;
-  /* margin: 0; */
-  /* background-color: red; */
-  /* margin: auto; */
+	font-family: 'Do Hyeon', sans-serif;
+	letter-spacing: 2px;
+	margin: 80px 50px 50px 50px;
+	background-image: url("textured-grey.jpg");
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
-.whole-board h1{
-  color: hsl(27, 100%, 50%);
-	  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-
-  font-size: 50px;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 50px;
-  text-transform:uppercase;
-  font-style: italic;
+ul {
+	padding: 0;
+	list-style-type: none;
+	width: 100%;
 }
 
-/* .board-row:after {
-  clear: both;
-  content: "";
-  display: table;
-
-} */
-
-
-
-.whole-board{
-  /* margin-left: 100px; */
-  /* background-color: orange; */
-  display: flex;
-  flex-direction: column;
-  width: 55vw;
-  /* background-color: purple; */
+.whole-board h1 {
+	color: hsl(27, 100%, 50%);
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	font-size: 50px;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	font-style: italic;
 }
 
+.whole-board {
+	display: flex;
+	flex-direction: column;
+	width: 55vw;
+}
 
 .square {
-  background: hsla(200, 5%, 60%, 0.7);
-  border: 5px solid black;
-  /* box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75); */
-		box-shadow: 0px 0px 20px 2px hsla(61, 100%, 53%, 0.5);
-  border-radius: 10px;
-  /* float: left; */
-  font-family: 'Caveat', cursive;
-  font-size: 50px;
-  font-weight: bold;
-  /* line-height: 100px; */
-
-  height: 100px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  /* width: 10vw; */
-  /* height: 10vw; */
-  width: 100px;
-  height: 100px;
-
+	background: hsla(200, 5%, 60%, 0.7);
+	border: 5px solid black;
+	box-shadow: 0px 0px 20px 2px hsla(61, 100%, 53%, 0.5);
+	border-radius: 10px;
+	font-family: 'Caveat', cursive;
+	font-size: 50px;
+	font-weight: bold;
+	height: 100px;
+	margin-right: -1px;
+	margin-top: -1px;
+	padding: 0;
+	text-align: center;
+	width: 100px;
+	height: 100px;
 }
 
 .square:focus {
-  outline: none;
-}
-
-.kbd-navigation .square:focus {
-  /* background: #ddd; */
+	outline: none;
 }
 
 .game {
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-around; */
-  /* background-color: orange; */
-  /* width: 80vw; */
+	display: flex;
+	flex-direction: row;
 }
-/* added */
-.all-rows{
- /* justify-content: center; */
- display: flex;
- flex-direction: column;
- /* width:90%; */
- /* height: 90%; */
-/* align-items: center; */
 
+.all-rows {
+	display: flex;
+	flex-direction: column;
 }
-/* added */
-.board-row{
-display: flex;
-flex-direction: row;
-justify-content: center;
-/* background-color: yellow; */
+
+.board-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 .game-info {
-  /* margin-left: 20px; */
-  /* margin-top: 90px; */
-  font-family: 'Do Hyeon', sans-serif;
-  /* background-color: pink; */
-  width: 35vw;
-  padding:0;
-  margin: 90px 0 0 0;
-  /* display: flex;
-  flex-direction: column; */
-  /* align-items: center; */
+	font-family: 'Do Hyeon', sans-serif;
+	width: 35vw;
+	padding: 0;
+	margin: 90px 0 0 0;
 }
-.status{
-  font-weight: bold;
-  font-size: 30px;
-  /* color: hsl(273, 40%, 60%); */
+
+.status {
+	font-weight: bold;
+	font-size: 30px;
 	color: hsl(83, 100%, 50%);
-  margin-left: 22px;
-  /* align-items: center; */
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-  /* background-color: green; */
-}
-.game-info button{
-  font-family: 'Do Hyeon', sans-serif;
-  font-size: 15px;
-  /* font-weight: bold; */
-  box-shadow: 8px 5px 10px 0px rgba(0,0,0,0.75);
-
-  border-color: rgba(0,0,0,0.75);
-  margin-bottom: 10px;
-  padding: 5px 30px;
-  background-color: hsl(219, 0%, 85%);
-  border-radius: 20px;
-  /* color: orange; */
-  /* align-items: center; */
-  /* height: 60%; */
-  /* margin: auto; */
-}
-.each-btn{
-  width: 100%;
-  /* background-color: blue; */
-  /* margin: 0; */
-  width: 90%;
-  /* padding: 0; */
-  /* justify-content: center; */
-  /* align-self: center; */
-  /* align-items: center; */
-  margin: auto;
+	margin-left: 22px;
 }
 
-@media only screen and (max-width: 550px){
-
-  body{
-    margin: 40px 10px 10px 10px;
-  }
-
-  .whole-board h1{
-    font-size: 30px;
-    margin-bottom: 30px;
-  }
-
-  .status{
-    font-size: 20px;
-  }
-  .game{
-    flex-direction: column;
-    justify-content: flex-start;
-    width:80vw;
-  }
-  .game-info{
-    margin-top: 30px;
-    width: 100%;
-  }
-  .status{
-    text-align: center;
-    margin: 0;
-  }
-
-.each-btn{
-  margin: auto;
-  text-align: center;
+.game-info button {
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 15px;
+	box-shadow: 8px 5px 10px 0px rgba(0, 0, 0, 0.75);
+	border-color: rgba(0, 0, 0, 0.75);
+	margin-bottom: 10px;
+	padding: 5px 30px;
+	background-color: hsl(219, 0%, 85%);
+	border-radius: 20px;
 }
-.board-row{
-  /* width: 100%; */
-  justify-content: center;
+
+.each-btn {
+	width: 100%;
+	width: 90%;
+	margin: auto;
 }
-.whole-board{
-  width: 100%;
-}
-.square{
-  width: 85px;
-  height: 85px;
-}
+
+@media only screen and (max-width: 550px) {
+	body {
+		margin: 40px 10px 10px 10px;
+	}
+
+	.whole-board h1 {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+
+	.status {
+		font-size: 20px;
+	}
+
+	.game {
+		flex-direction: column;
+		justify-content: flex-start;
+		width: 80vw;
+	}
+
+	.game-info {
+		margin-top: 30px;
+		width: 100%;
+	}
+
+	.status {
+		text-align: center;
+		margin: 0;
+	}
+
+	.each-btn {
+		margin: auto;
+		text-align: center;
+	}
+
+	.board-row {
+		justify-content: center;
+	}
+
+	.whole-board {
+		width: 100%;
+	}
+
+	.square {
+		width: 85px;
+		height: 85px;
+	}
 }
